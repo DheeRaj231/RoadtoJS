@@ -1,5 +1,5 @@
-
-#fff  //    DAY !     #fff
+/*
+//    DAY !    
 
 // DATA TYPES
 let javascriptIsFun = true;
@@ -64,3 +64,119 @@ console.log(x, y);
 // Highest Precedence -> ()
 
 
+*/
+
+
+#FFF   // DAY -> 2 
+
+// STRINGS AND TEMPLATE LITERALS
+
+// EXAMPLE FOR TEMPLATE STRINGS
+const firstName = "Dheeraj";
+const birthYear = 2001;
+const year = 2022;
+const job = "programmer";
+
+const Dheeraj = `Iam ${firstName},a ${year - birthYear} year old ${job}`;
+console.log(Dheeraj);
+
+// MULTI LINE STRING FORMAT USING TEMPLATE STRING
+console.log(`multi
+line 
+string`);
+
+//CONTROL STRUCTURE If-else
+const age = 15;
+
+if (age >= 18) {
+    console.log(`Dheeraj can start driving license🚗`);//EXECUTED ONLY IF() IS TRUE
+} else {
+    const yearLeft = 18 - age;
+    console.log(`Dheeraj is too young wait another ${yearLeft} years`);
+}
+
+// TYPE CONVERSION || IMPLICIT 
+const inputYear = "1991";
+console.log(Number(inputYear), inputYear);//convert string to number
+
+console.log(Number("dheeraj"));//this gives op as NaN
+console.log(typeof NaN);//type of NaN is number it means it is invalid number
+
+console.log(String(25), 25);//string and number
+
+//TYPE COERCION
+console.log(`iam ` + 21 + ` years old`)//21 is automatically converted to string
+console.log('23' - '10' - 3); //(-) converts string to number
+console.log('23' + '10' + 3); // (+) converts everything to string
+
+let n = '1' + 1;//'11'
+n = n - 1;//11-1 = 10
+
+//5 falsy values: 0,'',undefined,null,NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('dhee'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 0;
+if (money) {
+    console.log("Don't spend it all;");
+
+} else {
+    console.log('you shd get a job');//this will be the op
+
+}
+
+// EQALITY OPERATORS
+const age = 18;
+if (age === 18) { //strict eqality operator
+    console.log("age equal");
+}
+
+console.log("18" == 19) //loose eqality
+//avoide loose equality for less errors
+
+//for Input 
+
+const favourite = prompt("enter the fav numb? ");//takes input only as string
+
+if (favourite == 23) {//23=='23'
+    console.log("cool");
+}
+console.log(typeof favourite);
+
+if (favourite !== 23) {  //strict not equal to
+    console.log('why not 23');
+}
+
+//LOGICAL OPERATORS
+const hasDL = true; //A
+const hasGoodVision = true;//B
+
+console.log(hasDL && hasGoodVision);
+console.log(hasDL || hasGoodVision);
+console.log(!hasDL);
+
+const isTired = false;//C
+console.log(hasDL && hasGoodVision && isTired);
+
+if (hasDL && hasGoodVision && !isTired) {
+    console.log("you can drive");
+
+} else {
+    console.log("someone else should drive");
+}
+
+
+const avgDolphinScore = (96 + 108, 89) / 3;
+const avgKoalasScore = (88, 91, 101) / 3;
+
+if (avgDolphinScore > avgKoalasScore) {
+    console.log("dolphins win!");
+} else if (avgKoalasScore > avgDolphinScore) {
+    console.log("kolas win!");
+} else {
+    console.log("its a draw match");
+}
