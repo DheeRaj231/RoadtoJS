@@ -1,5 +1,5 @@
 /*
-//    DAY !    
+//    DAY ! #fff
 
 // DATA TYPES
 let javascriptIsFun = true;
@@ -65,9 +65,9 @@ console.log(x, y);
 
 
 */
+/*
 
-
-#FFF   // DAY -> 2 
+#FFF   // DAY -> 2
 
 // STRINGS AND TEMPLATE LITERALS
 
@@ -82,7 +82,7 @@ console.log(Dheeraj);
 
 // MULTI LINE STRING FORMAT USING TEMPLATE STRING
 console.log(`multi
-line 
+line
 string`);
 
 //CONTROL STRUCTURE If-else
@@ -95,7 +95,7 @@ if (age >= 18) {
     console.log(`Dheeraj is too young wait another ${yearLeft} years`);
 }
 
-// TYPE CONVERSION || IMPLICIT 
+// TYPE CONVERSION || IMPLICIT
 const inputYear = "1991";
 console.log(Number(inputYear), inputYear);//convert string to number
 
@@ -138,7 +138,7 @@ if (age === 18) { //strict eqality operator
 console.log("18" == 19) //loose eqality
 //avoide loose equality for less errors
 
-//for Input 
+//for Input
 
 const favourite = prompt("enter the fav numb? ");//takes input only as string
 
@@ -180,3 +180,68 @@ if (avgDolphinScore > avgKoalasScore) {
 } else {
     console.log("its a draw match");
 }
+*/
+
+// DAY 3 #fff #fff
+
+// switch statement
+
+const day = 'saturday';
+
+switch (day) {
+    case 'monday':
+        console.log("ugh its monday");
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log("write notes");
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log("enjoy the weekend");// no break
+    default:
+        console.log("not a valid input");
+}//op:enjoy the weekend
+//    script.js:203 not a valid input
+
+//STATEMENT AND EXPRESSION
+
+3 + 4 // expression produces value
+true && false && !false
+
+if (23 > 10) {  //statement which does not produce value
+    const str = '23 is bigg'
+}
+
+//TERNARY OPERATOR
+//condition ? if true : else ;
+const age = 15;
+age >= 18 ? console.log("i like to drink wine :-/") : console.log("ill drink water");
+
+//ternary operator with template string
+console.log(`i like to drinl ${age >= 18 ? (" wine :-/") : (" water")}`);
+
+//tip calculator
+let tip
+let bill = 440;
+
+const percentageEqualtoBill = (bill) * 15 / 100;
+const percentageNotEqual = (bill) * 20 / 100;
+const total15percenttip = percentageEqualtoBill + bill;
+const total20percentBill = percentageNotEqual + bill;
+
+
+bill >= 50 && bill <= 300 ? console.log(`the tip was ${percentageEqualtoBill}, and the total is ${total15percenttip}`) : console.log(`the tip was ${percentageNotEqual}, and the total is ${total20percentBill}`)
+
+'use strict'; //use this to avoid errors/bugs
+
+let hasDL = false;
+const passTest = true;
+
+if (passTest) hassDL = true;  //script.js:241 Uncaught ReferenceError: hassDL is not defined
+
+if (hasDL) console.log("i can drive");
+
+const interface = 'audio';//cant use because it is reserved word for feature
+const private = 532;//private is reserved word too
+//const if = 2; // if is keyword

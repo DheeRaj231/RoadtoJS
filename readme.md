@@ -76,3 +76,30 @@
     ___________________________________________________
   
 
+
+----------------------------------------------------
+
+# Day 3
+
+## Switch Statements
+        switch (variable) {
+            case 'varname':
+                  //body;
+                  break;
+            default:
+                 //statement;
+        }
+
+## ->Statement and Expression
+    (*)expression produces value.
+    (*)statement which does not produce value.
+
+## Ternary operator
+    condition ? if condition is true : if condition is false
+
+    Note: Template String can be used inside ternary operators
+
+## Strict Mode
+    Js enables strict mode to avoid bugs.
+    Eg: reference error, reserved words such as interface,private...
+
