@@ -103,3 +103,25 @@
     Js enables strict mode to avoid bugs.
     Eg: reference error, reserved words such as interface,private...
 
+
+----------------------------------------------------
+
+# Day 4
+
+## FUNCTIONS
+
+
+### FUNCTION DECLARATION:
+    Normal functions which are widely used 
+    In this hoisting is supported and use of this operator is allowed
+
+
+### FUNCTION EXPRESSION
+    The variable is declared to store the returned value of function
+    Hoisting is not supported
+
+### ARROW FUNCTION
+    This returns the value implicitly 
+    It does not support this keyword
+
+- Functions can call another inside it with specific function name and parameters.

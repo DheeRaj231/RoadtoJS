@@ -182,13 +182,14 @@ if (avgDolphinScore > avgKoalasScore) {
 }
 */
 
+/*
 // DAY 3 #fff #fff
 
 // switch statement
 
 const day = 'saturday';
 
-switch (day) {
+  switch (day) {    //checks if day matchs and returns true or false
     case 'monday':
         console.log("ugh its monday");
         break;
@@ -245,3 +246,79 @@ if (hasDL) console.log("i can drive");
 const interface = 'audio';//cant use because it is reserved word for feature
 const private = 532;//private is reserved word too
 //const if = 2; // if is keyword
+*/
+
+// DAY - 4 #fff
+
+'use strict';
+
+// FUNCTIONS
+
+function fruitProcessor(apple, oranges) { //arguements
+    console.log(apple, oranges);
+    const juice = `juice with ${apple} apples and ${oranges} oranges.`;
+    return juice;
+}
+
+const applejuice = fruitProcessor(5, 13); // capturing the return value and storing 
+console.log(applejuice);
+console.log(fruitProcessor(3, 2));
+
+// function declaration
+function calcAge(birthYear) {  //HOSTING WORKS
+
+    return 2022 - birthYear;
+}
+const age1 = calcAge(1991)
+console.log(age1);
+
+//Function expression
+const calcAge2 = function (birthYear) { //HOSTING DOES NOT WORK
+    return 2022 - birthYear;//expression
+}
+
+const age2 = calcAge2(1991);
+console.log(age1, age2);
+
+// ARROW FUNCTIONS
+// does not support (this)  
+const calcAge3 = birthYear => 2037 - birthYear; //returns implicitly
+console.log(calcAge3(2001));
+
+const yearsUntilRetirement = birthYear => {
+    const age = 2022 - birthYear;
+    const retirement = 60 - age;
+    return retirement;
+}
+
+console.log(yearsUntilRetirement(1991));
+
+// FUNCTIONS CALLING OTHER FUNCTIONS
+
+function cutFruits(fruit) { //called func
+    return fruit * 4;
+}
+
+function fruitProcessor(apple, oranges) { //arguements
+    const applePieces = cutFruits(apple); //calling fun
+    const orangesPieces = cutFruits(oranges);
+    const juice = `juice with ${applePieces} apples pices and ${orangesPieces} oranges pices.`;
+    return juice;
+}
+
+sconsole.log(fruitProcessor(2, 3));
+
+
+const avgScore = (a, b, c) => (a + b + c) / 3;
+const avgDolphin1 = avgScore(44, 23, 71);
+const avgKolas1 = avgScore(65, 54, 49); // 
+
+function checkWinner(avgDolphin1, avgKolas1) {
+    if (avgDolphin1 > avgKolas1) {
+        return `dolphins win (${avgDolphin1} vs ${avgKolas1})`;
+
+    } else
+        return `kolas win (${avgKolas1} vs ${avgDolphin1})`
+};
+
+console.log(checkWinner(avgDolphin1, avgKolas1));
