@@ -247,7 +247,7 @@ const interface = 'audio';//cant use because it is reserved word for feature
 const private = 532;//private is reserved word too
 //const if = 2; // if is keyword
 */
-
+/*
 // DAY - 4 #fff
 
 'use strict';
@@ -260,7 +260,7 @@ function fruitProcessor(apple, oranges) { //arguements
     return juice;
 }
 
-const applejuice = fruitProcessor(5, 13); // capturing the return value and storing 
+const applejuice = fruitProcessor(5, 13); // capturing the return value and storing
 console.log(applejuice);
 console.log(fruitProcessor(3, 2));
 
@@ -281,7 +281,7 @@ const age2 = calcAge2(1991);
 console.log(age1, age2);
 
 // ARROW FUNCTIONS
-// does not support (this)  
+// does not support (this)
 const calcAge3 = birthYear => 2037 - birthYear; //returns implicitly
 console.log(calcAge3(2001));
 
@@ -306,12 +306,12 @@ function fruitProcessor(apple, oranges) { //arguements
     return juice;
 }
 
-sconsole.log(fruitProcessor(2, 3));
+console.log(fruitProcessor(2, 3));
 
 
 const avgScore = (a, b, c) => (a + b + c) / 3;
 const avgDolphin1 = avgScore(44, 23, 71);
-const avgKolas1 = avgScore(65, 54, 49); // 
+const avgKolas1 = avgScore(65, 54, 49); //
 
 function checkWinner(avgDolphin1, avgKolas1) {
     if (avgDolphin1 > avgKolas1) {
@@ -322,3 +322,65 @@ function checkWinner(avgDolphin1, avgKolas1) {
 };
 
 console.log(checkWinner(avgDolphin1, avgKolas1));
+*/
+
+// DAY 5  #FFF
+
+// ARRAYS
+
+const cars = ['volvo', 'bmi', 'audi'];
+console.log(cars.length);
+cars[2] = 'bmw'; //replace
+//cars = ['new','newarry']; this cant be done
+
+
+const carsRelease = [1991, 2001, 2008];
+
+const calcModel = function (year1) {
+    return 2022 - year1;
+
+}
+
+const car1 = calcModel(carsRelease[0]);
+const car2 = calcModel(carsRelease[1]);
+const car3 = calcModel(carsRelease[2]);
+console.log(car1, car2, car3);
+
+const cartype = [cars[0], car1, 'yers old']
+console.log(cartype);
+
+// PUSH  
+cars.push('tesla');//add elsement at last
+console.log(cars);
+// unshift
+
+cars.unshift('mercedes'); //add at first
+console.log(cars);
+
+// remove elements
+cars.pop(); //last
+console.log(cars);
+
+cars.shift(); //firsts
+console.log(cars);
+
+console.log(cars.indexOf('audi'));
+
+if (cars.includes('volvo')) {
+    console.log('volvo is good car');
+}
+
+//tip calculator
+
+const calcTip = function (bill) {
+    if (bill >= 50 && bill <= 300) {
+        return (bill * 0.15);
+    } else {
+        return (bill * 0.20);
+    }
+}
+const bill = [125, 555, 44];
+const tips = [calcTip(bill[0]), calcTip(bill[1]), calcTip(bill[2])];
+const total = [bill[0] + tips[0], bill[1] + tips[1], bill[2] + tips[2]];
+
+console.log(tips, bill, total);

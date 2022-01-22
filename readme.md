@@ -125,3 +125,25 @@
     It does not support this keyword
 
 - Functions can call another inside it with specific function name and parameters.
+
+----------------------------------------------------
+
+# Day 5
+
+## ARRAYS
+     An array is a special variable, which can hold more than one value.Here the order of element matters i.e every element has index value based on their position in array.
+     The base of index is 0.
+
+     (*) We can replace an element of array but cannot replace complete array.
+     (*) Nesting of array is possible.
+
+- Adding element
+    - PUSH
+    - unshift
+
+- Removing element
+    - POP
+    - shift
+
+- includes : checks if particular element is present in the array and returns boolean value as result.
+
