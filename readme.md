@@ -149,7 +149,7 @@
 
 ----------------------------------------------------
 
-# Day 5
+# Day 6
 
 ## OBJECTS
 - Retriving data using dot and Bracket Notation
