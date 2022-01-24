@@ -182,6 +182,8 @@ if (avgDolphinScore > avgKoalasScore) {
 }
 */
 
+// const { CONNREFUSED } = require("dns");
+
 /*
 // DAY 3 #fff #fff
 
@@ -323,7 +325,7 @@ function checkWinner(avgDolphin1, avgKolas1) {
 
 console.log(checkWinner(avgDolphin1, avgKolas1));
 */
-
+/*
 // DAY 5  #FFF
 
 // ARRAYS
@@ -384,3 +386,136 @@ const tips = [calcTip(bill[0]), calcTip(bill[1]), calcTip(bill[2])];
 const total = [bill[0] + tips[0], bill[1] + tips[1], bill[2] + tips[2]];
 
 console.log(tips, bill, total);
+*/
+
+// DAY - 6 #FFF
+
+// OBJECTS
+
+const cars = {
+    carName: 'audi',
+    model: 2006,
+    speed: 360,
+    otherCars: ['bmw', 'benz', 'volvo'],
+    // calcModel: function (model) {
+    //     return 2022 - model;
+    // }
+    calcModel: function () {
+        this.modelAge = 2022 - this.model;
+        return this.modelAge;
+    },
+
+    getSummary: function () {
+        return `${this.carName} is a ${this.calcModel()} old car company`
+    },
+
+
+};
+
+console.log(cars.getSummary());
+console.log(cars.calcModel());
+
+console.log(cars.speed); //DOT OPERATOR
+console.log(cars['carName']);
+
+const interstedObj = prompt('which property of cars u wanna know');
+console.log(cars[interstedObj]);
+
+cars['newObj'] = 'new object added';
+console.log(cars)
+
+console.log(cars.carName + " has " + cars.otherCars.length + " sub cars and better one is  " + cars.otherCars[0]);
+
+// CHALLENGE
+
+const mark = {
+    name: 'Mark',
+    mass: 68,
+    height: 1.69,
+    calcBMI: function () {
+        this.bMi = (this.mass) / (this.height * this.height);
+        return this.bMi;
+    }
+}
+console.log(mark.calcBMI());
+
+const john = {
+    name: 'john',
+    mass: 92,
+    height: 1.92,
+    calcBMI: function () {
+        this.bMi2 = (this.mass) / (this.height * this.height);
+        return this.bMi2;
+    }
+}
+console.log(john.calcBMI());
+(mark.calcBMI() < john.calcBMI()) ? console.log(`${mark.name}'s BMI is ${mark.calcBMI()} higher than john`) : console.log(`${john.name}'s BMI is higher than mark`);
+
+// FOR LOOP
+
+const Cars1 = {
+    carName: 'audi',
+    model: 2006,
+    speed: 360,
+    otherCars: ['bmw', 'benz', 'volvo'],
+}
+console.log(Cars1.length);
+
+const empty = []; // empty array
+for (let i = 0; i <= 10; i++) {
+    console.log(Cars1[i]); //accessing elements of array
+
+    //filling array
+    //empty[i] = typeof cars[i];
+    empty.push(typeof Cars1[i]);
+}
+
+// shifting array from one to another
+const yearnew = [1991, 2001, 2007, 2020];
+const ag = [];
+
+for (let i = 0; i < yearnew.length; i++) {
+    ag.push(yearnew[i]);
+}
+console.log(ag);
+
+// Nesting of Loop
+
+for (let i = 1; i < 4; i++) {
+    console.log(`-----main loop  ${i} `);
+
+    for (let j = 1; j < 6; j++) {
+        console.log(`sub loop ${j}`);
+    }
+}
+
+// while loop
+let rep = 1
+while (rep <= 10) {
+    console.log(`wow ${rep}`);
+    rep++;
+}
+
+// CHALLENGE
+
+const calcTip = function (bill) {
+    if (bill >= 50 && bill <= 300) {
+        return (bill * 0.15);
+    } else {
+        return (bill * 0.20);
+    }
+}
+
+const bill = [12, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tip = [];
+const total = [];
+
+for (i = 0; i < bill.length; i++) {
+    tip.push(calcTip(bill[i]));
+    total.push(bill[i] + tip[i]);
+}
+
+// const tips = [calcTip(bill[0]), calcTip(bill[1]), calcTip(bill[2])];
+// const total = [bill[0] + tips[0], bill[1] + tips[1], bill[2] + tips[2]];
+
+console.log(bill, tip, total);

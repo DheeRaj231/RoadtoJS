@@ -147,3 +147,18 @@
 
 - includes : checks if particular element is present in the array and returns boolean value as result.
 
+----------------------------------------------------
+
+# Day 5
+
+## OBJECTS
+- Retriving data using dot and Bracket Notation
+- Object Methods
+  - function inside objects. 
+- This keyword
+- Control Structure
+  - for loop,while loop
+- Break and continue
+- Filling empty array
+- Looping Backwards
+- Nesting of loops
