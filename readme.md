@@ -122,7 +122,7 @@
 ### FUNCTION DECLARATION:
 
     Normal functions which are widely used
-    In this hoisting is supported and use of this operator is allowed
+    .In this hoisting is supported and use of this operator is allowed
 
 ### FUNCTION EXPRESSION
 
