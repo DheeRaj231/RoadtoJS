@@ -160,11 +160,10 @@
 
 - includes : checks if particular element is present in the array and returns boolean value as result.
 
-<<<<<<< HEAD
-=======
-----------------------------------------------------
+---
 
->>>>>>> 0a4ff92fe752e9e46836d209b33755ae2807f9b1
+---
+
 # Day 6
 
 ## OBJECTS
@@ -179,7 +178,7 @@
 - Filling empty array
 - Looping Backwards
 - Nesting of loops
-<<<<<<< HEAD
+  <<<<<<< HEAD
 
 ---
 
@@ -194,6 +193,41 @@
 - Use Stack Overflow, google, MDN
 - console (warn, error, table)
 - Think Like a developer
-- Debuggers
-=======
->>>>>>> 0a4ff92fe752e9e46836d209b33755ae2807f9b1
+- Debugger
+
+---
+
+# Day 8
+
+- Basic HTML Structure and Elements
+- Attributes, Classes and IDs
+- Basic Styling with CSS
+- CSS Box Models
+
+---
+
+# Day 9
+
+- DOM (Document Object Model)
+- document.querySelector('')
+- .textContent, .value
+- Dom Manipulation
+- EventListner (addEventListner)
+- State variable
+- .style. propertyName = 'value';
+
+---
+
+# Day 10
+
+- Code Refactoring (DRY)
+- querySelectorAll('value')
+- classList
+  - add
+  - remove
+  - contains
+  - toggle
+- key Events
+  - keydown
+  - keypressed
+  - keyup

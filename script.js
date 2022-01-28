@@ -689,3 +689,29 @@ const printForecast = function (arr) {
 printForecast(data1);
 // en
 */
+// ==============================================
+// #fff DAY - 9
+
+document.querySelector(".container").addEventListener("click", function () {
+  document.querySelector(".container").style.backgroundColor = "black";
+  document.querySelector("#heading").style.color = "white";
+  document.querySelector("#heading").innerHTML = "You Clicked Me";
+});
+
+// ================================================================
+// ================================================================
+// #fff  DAY 10
+
+document.querySelector(".click-me").addEventListener("click", function () {
+  document.querySelector(".display").classList.toggle("hidden");
+});
+
+div.classList; // returns all the class associtated to div
+div.classList.remove("class");
+div.classList.add("new_class");
+div.classList.toggle("class_name", condition); //toggles the class if the conditon is true
+
+//events are stored inside objects
+document.addEventListener("keydown", function (e) {
+  console.log(e); //it gives the list of events happend
+});
