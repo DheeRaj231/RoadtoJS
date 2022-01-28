@@ -160,6 +160,11 @@
 
 - includes : checks if particular element is present in the array and returns boolean value as result.
 
+<<<<<<< HEAD
+=======
+----------------------------------------------------
+
+>>>>>>> 0a4ff92fe752e9e46836d209b33755ae2807f9b1
 # Day 6
 
 ## OBJECTS
@@ -174,6 +179,7 @@
 - Filling empty array
 - Looping Backwards
 - Nesting of loops
+<<<<<<< HEAD
 
 ---
 
@@ -189,3 +195,5 @@
 - console (warn, error, table)
 - Think Like a developer
 - Debuggers
+=======
+>>>>>>> 0a4ff92fe752e9e46836d209b33755ae2807f9b1
