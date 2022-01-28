@@ -188,4 +188,4 @@
 - Use Stack Overflow, google, MDN
 - console (warn, error, table)
 - Think Like a developer
-- Debugger
+- Debuggers
