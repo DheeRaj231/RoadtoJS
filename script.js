@@ -715,3 +715,17 @@ div.classList.toggle("class_name", condition); //toggles the class if the condit
 document.addEventListener("keydown", function (e) {
   console.log(e); //it gives the list of events happend
 });
+
+// ===========================================
+// DAy - 11 #fff
+
+// selecting id
+const id = document.getElementById("score");
+// adding classList event
+dispatchEvent.classList.add("hidden");
+// to hide something - .hidden{
+//   display:none;
+// }
+// toggle function of classList
+// player1.classList.toggle('active-player');
+// player2.classList.toggle('active-player');//toggles the active-player class between two playerss

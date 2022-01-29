@@ -231,3 +231,65 @@
   - keydown
   - keypressed
   - keyup
+
+---
+
+# Day 11
+
+## JS behind the scenes
+
+- High Level Lang
+  - no need to manage resource
+- Garbage Collection
+  - automatically clean the memory
+- Just in time Compiled
+  - It involves both Compilation and Interpretation
+- Multi Paradigm
+  - multiple style of coding
+- Procedural prog
+- Object oriented prog
+- Function Prog
+- First class function
+  - function are treated as variables
+- Dynamic
+  - assigns types internally
+- Single Threaded
+  - Js runs on single thread,but task is processed in background
+- Non Blocking event loop
+  - It manages background process
+
+#### NOTE:
+
+     Js is not intrepreted language it is JUST IN TIME COMPILED LANGUAGE
+
+### JS engine
+
+    prog that executes js code
+     V8 engine used for chrome and node js.
+
+- JS engine
+
+  - Call Stack
+    - Code execution place(event loop calls the event)
+  - Heap
+    - Obj are stored
+
+- Js run time in browser
+
+  - js engine
+  - web APIs
+  - Call back Queue
+
+- Execution context
+
+  - Environment to execute js code
+    - Varible Env
+    - Scope Chain
+    - this keyword
+
+- Call Stack
+  - Global()
+  - First()
+  - Second()
+    - Executable context is place inside stack
+    - EC that is on top is executed first
