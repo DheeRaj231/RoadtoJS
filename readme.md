@@ -293,3 +293,42 @@
   - Second()
     - Executable context is place inside stack
     - EC that is on top is executed first
+
+---
+
+# Day 12
+
+- Scope and Scope Chain
+- Lexical Scoping
+- Global Scope
+- Function Scope
+- Block Scope
+- Scope of a variable
+- Hoisting
+- TDZ (Temproal Dead Zone)
+- This Keyword
+- Method Borrowing
+
+- ## Hoisting
+  |                                        | Hoisted                       | Initial Value   | Scope    |
+  | -------------------------------------- | ----------------------------- | --------------- | -------- |
+  | function Declaration                   | yes                           | actual function | block    |
+  | var variables                          | yes                           | undefined       | function |
+  | let and const Variables                | NO                            | uninitilized    | block    |
+  | function expression and arrow function | Depends on let, var and const | -               | -        |
+
+---
+
+# Day 13
+
+- Regular functions vs Arrow functions
+- Argument Keyword
+- const self = this; (used inside normal function to access the properties of the parent function)
+- primitive vs reference types
+
+### storage:
+
+    * Premitive values are stored in call stack.
+    * Ref value(objs) are stored in HEAP.
+
+- object.assign({}, objname)
