@@ -692,37 +692,37 @@ printForecast(data1);
 // ==============================================
 // #fff DAY - 9
 
-document.querySelector(".container").addEventListener("click", function () {
-  document.querySelector(".container").style.backgroundColor = "black";
-  document.querySelector("#heading").style.color = "white";
-  document.querySelector("#heading").innerHTML = "You Clicked Me";
-});
+// document.querySelector(".container").addEventListener("click", function () {
+//   document.querySelector(".container").style.backgroundColor = "black";
+//   document.querySelector("#heading").style.color = "white";
+//   document.querySelector("#heading").innerHTML = "You Clicked Me";
+// });
 
 // ================================================================
 // ================================================================
 // #fff  DAY 10
 
-document.querySelector(".click-me").addEventListener("click", function () {
-  document.querySelector(".display").classList.toggle("hidden");
-});
+// document.querySelector(".click-me").addEventListener("click", function () {
+//   document.querySelector(".display").classList.toggle("hidden");
+// });
 
-div.classList; // returns all the class associtated to div
-div.classList.remove("class");
-div.classList.add("new_class");
-div.classList.toggle("class_name", condition); //toggles the class if the conditon is true
+// div.classList; // returns all the class associtated to div
+// div.classList.remove("class");
+// div.classList.add("new_class");
+// div.classList.toggle("class_name", condition); //toggles the class if the conditon is true
 
-//events are stored inside objects
-document.addEventListener("keydown", function (e) {
-  console.log(e); //it gives the list of events happend
-});
+// //events are stored inside objects
+// document.addEventListener("keydown", function (e) {
+//   console.log(e); //it gives the list of events happend
+// });
 
 // ===========================================
 // DAy - 11 #fff
 
-// selecting id
-const id = document.getElementById("score");
-// adding classList event
-dispatchEvent.classList.add("hidden");
+// // selecting id
+// const id = document.getElementById("score");
+// // adding classList event
+// dispatchEvent.classList.add("hidden");
 // to hide something - .hidden{
 //   display:none;
 // }
@@ -730,7 +730,7 @@ dispatchEvent.classList.add("hidden");
 // player1.classList.toggle('active-player');
 // player2.classList.toggle('active-player');//toggles the active-player class between two playerss
 
-// DAY - 12 #FFF 
+// DAY - 12 #FFF
 // Scoping in Practice
 
 /*
@@ -961,3 +961,121 @@ jessicaCopy.family.push('John');
 console.log('Before marriage:', jessica2);
 console.log('After marriage: ', jessicaCopy);
 */
+///////////////////////////////////
+// DATA STRUCTURE
+// DAY - 14 #fff
+// DESTRUCTURING ARRAY
+
+// const cars = {
+//   name: ["audi", "benz", "volvo"],
+//   features: ["speed", "class", "control"],
+
+//   order: function (name, features) {
+//     return [this.name[name], this.features[features]];
+//   },
+// };
+
+// let [first, , last] = cars.features;
+// console.log(first, last);
+
+// [first, last] = [last, first]; //switching  2 var
+// console.log(first, last);
+
+// const [fir, las] = cars.order(2, 0); //destructuring inside function
+// console.log(fir, las);
+
+// //nested array
+// const nest = [1, 2, [3, 4]];
+// const [i, , j, k] = nest;
+// console.log(i, j, k);
+
+// // Destructuring OBJECTS
+// const { name: newCars, features: advantages } = cars;
+// console.log(newCars, advantages);
+
+// // ///////////////////////////////
+// // DAY - 15 #fff
+// // SPREAD OPERATOR(...)  *right side of =
+
+// const newModel = [...cars.features, "color"];
+// console.log(newModel);
+
+// // copy array
+// const mainModelCopy = [...cars.features];
+// // join two array
+// // const menu = [...cars.newModel, ...cars.mainModelCopy];
+
+// // REst pattern
+// // left side of =
+
+// const [a, b, ...others] = [1, 2, 2, 3, 4];
+// console.log(a, b, others);
+
+///////////////////////
+// coding challenge
+
+const game = {
+  team1: "Bayern Munich",
+  team2: "Borrussia Dortmund",
+  players: [
+    [
+      "Neuer",
+      "Pavard",
+      "Martinez",
+      "Alaba",
+      "Davies",
+      "Kimmich",
+      "Goretzka",
+      "Coman",
+      "Muller",
+      "Gnarby",
+      "Lewandowski",
+    ],
+    [
+      "Burki",
+      "Schulz",
+      "Hummels",
+      "Akanji",
+      "Hakimi",
+      "Weigl",
+      "Witsel",
+      "Hazard",
+      "Brandt",
+      "Sancho",
+      "Gotze",
+    ],
+  ],
+  score: "4:0",
+  scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"],
+  date: "Nov 9th, 2037",
+  odds: {
+    team1: 1.33,
+    x: 3.25,
+    team2: 6.5,
+  },
+};
+
+const player1 = [game.players[0]];
+// console.log(player1);
+const player2 = [game.players[1]];
+const [[gk, ...otherplayers]] = game.players;
+console.log(otherplayers);
+
+const allPlayers = [...player1, ...player2];
+const playerFinal = [...player1, "tiago", "coutino", "perscic"];
+
+const {
+  odds: { team1, x: draw, team2 },
+} = game;
+console.log(team1, draw, team2);
+
+const printGoals = function (...players) {
+  console.log(players);
+  console.log(`${players.length} goals were scored`);
+};
+// printGoals('Davies', 'Muller', 'Lewandowski', 'Kimmich');
+// printGoals('Davies', 'Muller');
+printGoals(...game.scored);
+// 7.
+team1 < team2 && console.log("Team 1 is more likely to win");
+team1 > team2 && console.log("Team 2 is more likely to win");

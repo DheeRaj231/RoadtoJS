@@ -332,3 +332,34 @@
     * Ref value(objs) are stored in HEAP.
 
 - object.assign({}, objname)
+
+# Day 14
+
+- Destructuring array
+- Nested Destructuring
+- Destructuring with default values
+- Destructuring Objects
+- Mutating variables (use () )
+
+---
+
+# Day 15
+
+- Spread operator (...)
+- Used for shallow copy and merge array
+- Iterables: arrays, strings, maps, sets . NOT Objects
+- Does not work in template literal
+- Works on objects even through they are not iterable
+- Rest pattern and parameters
+- Only one rest variable and it must be last
+
+- Short Circuting
+  - Uses any Data type
+  - Return any data type
+- || (or)
+- && (and)
+- ?? (nullish coalesing)
+- Logical assignment
+  - ||=
+  - ??=
+  - &&=
