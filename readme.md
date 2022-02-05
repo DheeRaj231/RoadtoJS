@@ -374,3 +374,27 @@
 - Optional Chaining (?.)
   - if value is not found it returns undefined
 - looping objs,methods,arrays.
+
+---
+
+# Day 17
+
+- SETS
+
+  - no duplication.
+  - cannot retrive particular value.
+    - .size
+    - .has
+    - .add
+    - .delete
+
+- MAPS
+  - map the values in key value,key has multiple type
+  - iteration possible
+    - .get
+    - .set
+    - .size
+
+    - .has
+    - .add
+    - .delete
