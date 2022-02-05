@@ -1014,68 +1014,146 @@ console.log('After marriage: ', jessicaCopy);
 ///////////////////////
 // coding challenge
 
-const game = {
-  team1: "Bayern Munich",
-  team2: "Borrussia Dortmund",
-  players: [
-    [
-      "Neuer",
-      "Pavard",
-      "Martinez",
-      "Alaba",
-      "Davies",
-      "Kimmich",
-      "Goretzka",
-      "Coman",
-      "Muller",
-      "Gnarby",
-      "Lewandowski",
-    ],
-    [
-      "Burki",
-      "Schulz",
-      "Hummels",
-      "Akanji",
-      "Hakimi",
-      "Weigl",
-      "Witsel",
-      "Hazard",
-      "Brandt",
-      "Sancho",
-      "Gotze",
-    ],
-  ],
-  score: "4:0",
-  scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"],
-  date: "Nov 9th, 2037",
-  odds: {
-    team1: 1.33,
-    x: 3.25,
-    team2: 6.5,
-  },
-};
+// const game = {
+//   team1: "Bayern Munich",
+//   team2: "Borrussia Dortmund",
+//   players: [
+//     [
+//       "Neuer",
+//       "Pavard",
+//       "Martinez",
+//       "Alaba",
+//       "Davies",
+//       "Kimmich",
+//       "Goretzka",
+//       "Coman",
+//       "Muller",
+//       "Gnarby",
+//       "Lewandowski",
+//     ],
+//     [
+//       "Burki",
+//       "Schulz",
+//       "Hummels",
+//       "Akanji",
+//       "Hakimi",
+//       "Weigl",
+//       "Witsel",
+//       "Hazard",
+//       "Brandt",
+//       "Sancho",
+//       "Gotze",
+//     ],
+//   ],
+//   score: "4:0",
+//   scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"],
+//   date: "Nov 9th, 2037",
+//   odds: {
+//     team1: 1.33,
+//     x: 3.25,
+//     team2: 6.5,
+//   },
+// };
 
-const player1 = [game.players[0]];
-// console.log(player1);
-const player2 = [game.players[1]];
-const [[gk, ...otherplayers]] = game.players;
-console.log(otherplayers);
+// const player1 = [game.players[0]];
+// // console.log(player1);
+// const player2 = [game.players[1]];
+// const [[gk, ...otherplayers]] = game.players;
+// console.log(otherplayers);
 
-const allPlayers = [...player1, ...player2];
-const playerFinal = [...player1, "tiago", "coutino", "perscic"];
+// const allPlayers = [...player1, ...player2];
+// const playerFinal = [...player1, "tiago", "coutino", "perscic"];
 
-const {
-  odds: { team1, x: draw, team2 },
-} = game;
-console.log(team1, draw, team2);
+// const {
+//   odds: { team1, x: draw, team2 },
+// } = game;
+// console.log(team1, draw, team2);
 
-const printGoals = function (...players) {
-  console.log(players);
-  console.log(`${players.length} goals were scored`);
-};
-// printGoals('Davies', 'Muller', 'Lewandowski', 'Kimmich');
-// printGoals('Davies', 'Muller');
-printGoals(...game.scored);
-// 7.
-team1 < team2 && console.log("Team 1 is more likely to win");
-team1 > team2 && console.log("Team 2 is more likely to win");
+// const printGoals = function (...players) {
+//   console.log(players);
+//   console.log(`${players.length} goals were scored`);
+// };
+// // printGoals('Davies', 'Muller', 'Lewandowski', 'Kimmich');
+// // printGoals('Davies', 'Muller');
+// printGoals(...game.scored);
+// // 7.
+// team1 < team2 && console.log("Team 1 is more likely to win");
+// team1 > team2 && console.log("Team 2 is more likely to win");
+
+// // CODING CHALL -2
+
+// for (const [i, player] of game.scored.entries())
+//   console.log(`goal ${i + 1}: ${player}`);
+
+// const odds = Object.values(game.odds);
+// let avg = 0;
+// for (const odd of Object.values(game.odds)) avg += odd;
+// avg /= odds.length;
+// console.log(avg);
+
+// // //////////////////////////////
+// // //  DAY - 16 #fff
+
+// // // for of loop
+// // const menu = [...cars.name, ...cars.features];
+
+// // for (const items of menu) console.log(items);
+
+// // for (const [i, el] of menu.entries()) {
+// //   console.log(`${i}: ${el}`);
+// // }
+
+// const orderDay = ["mon", "tues", "fri", "sun"];
+// const openingHours = {
+//   [orderDay[1]]: {
+//     open: 12,
+//     close: 22,
+//   },
+//   [orderDay[2]]: {
+//     open: 11,
+//     close: 23,
+//   },
+//   [orderDay[3]]: {
+//     open: 0, // Open 24 hours
+//     close: 24,
+//   },
+// };
+// const restaurant = {
+//   name: "Classico Italiano",
+//   location: "Via Angelo Tavanti 23, Firenze, Italy",
+//   categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
+//   starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
+//   mainMenu: ["Pizza", "Pasta", "Risotto"],
+//   orderDay,
+//   openingHours,
+// };
+
+// // OPTIONAL Chaining ?. if value is not found it returns undefined
+
+// // if (restaurant.openingHours && restaurant.openingHours.mon)
+// //   console.log(restaurant.openingHours.mon.open);
+
+// // OPTIONAL Chaining menthod
+// console.log(restaurant.orderDay.mon?.open);
+
+// const days1 = ["mon", "sat", "tues", "fri", "sun"];
+
+// for (const day of days1) {
+//   // console.log(day);
+//   const open = restaurant.openingHours[day]?.open ?? "closed";
+//   console.log(`on ${day},we open at ${open}`);
+// }
+// // optional chaining works on both methods and arrays.
+
+// LOOPING OBJ
+// for (const day of days1) {
+//   openStr += `${day},`;
+// }
+// console.log(openStr);
+
+// // entire obj
+// const entries = Object.entries(openingHours);
+
+// for (const [key, { open, close }] of entries) {
+//   console.log(`on ${key} we open at ${open} and close at ${close}`);
+// }

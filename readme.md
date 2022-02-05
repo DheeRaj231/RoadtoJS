@@ -363,3 +363,14 @@
   - ||=
   - ??=
   - &&=
+
+---
+
+# Day 16
+
+- for of loop
+  - can use break and continue
+- Enhanced obj literal
+- Optional Chaining (?.)
+  - if value is not found it returns undefined
+- looping objs,methods,arrays.
