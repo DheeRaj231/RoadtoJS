@@ -182,6 +182,8 @@ if (avgDolphinScore > avgKoalasScore) {
 }
 */
 
+// const { cpSync } = require("fs");N
+
 // const { CONNREFUSED } = require("dns");
 
 /*
@@ -1103,21 +1105,21 @@ console.log('After marriage: ', jessicaCopy);
 // //   console.log(`${i}: ${el}`);
 // // }
 
-const orderDay = ["mon", "tues", "fri", "sun"];
-const openingHours = {
-  [orderDay[1]]: {
-    open: 12,
-    close: 22,
-  },
-  [orderDay[2]]: {
-    open: 11,
-    close: 23,
-  },
-  [orderDay[3]]: {
-    open: 0, // Open 24 hours
-    close: 24,
-  },
-};
+// const orderDay = ["mon", "tues", "fri", "sun"];
+// const openingHours = {
+//   [orderDay[1]]: {
+//     open: 12,
+//     close: 22,
+//   },
+//   [orderDay[2]]: {
+//     open: 11,
+//     close: 23,
+//   },
+//   [orderDay[3]]: {
+//     open: 0, // Open 24 hours
+//     close: 24,
+//   },
+// };
 // const restaurant = {
 //   name: "Classico Italiano",
 //   location: "Via Angelo Tavanti 23, Firenze, Italy",
@@ -1161,71 +1163,139 @@ const openingHours = {
 //  DAY - 17 #fff
 // sets
 
-const calcSet = new Set(["add", "sub", "mul", "div"]);
-console.log(calcSet.size);
+// const calcSet = new Set(["add", "sub", "mul", "div"]);
+// console.log(calcSet.size);
 
-for (const orde of calcSet) console.log(orde);
+// for (const orde of calcSet) console.log(orde);
 
-const lang = ["sas", "js", "css", "bootstrap", "xml"];
-const snewlang = [...new Set(lang)];
-console.log(snewlang);
+// const lang = ["sas", "js", "css", "bootstrap", "xml"];
+// const snewlang = [...new Set(lang)];
+// console.log(snewlang);
 
-// MAPS
+// // MAPS
 
-const calc = new Map();
-calc.set("name", "namastako");
-calc.set(true, "calcus");
-console.log(calc.set(2, "ksus"));
-calc.set(["add", "sub", "mul", "div"]).set("2", "3", "5");
+// const calc = new Map();
+// calc.set("name", "namastako");
+// calc.set(true, "calcus");
+// console.log(calc.set(2, "ksus"));
+// calc.set(["add", "sub", "mul", "div"]).set("2", "3", "5");
 
-console.log(calc.get(true));
+// console.log(calc.get(true));
 
-// map iteration
-// instead of set
+// // map iteration
+// // instead of set
 
-const test = new Map([
-  ["question", "toughest option"],
-  [1, "front end"],
-  [2, "backend"],
-  ["correct", 2],
-  [true, "correct"],
-  [false, "false ans"],
-]);
-console.log(test);
+// const test = new Map([
+//   ["question", "toughest option"],
+//   [1, "front end"],
+//   [2, "backend"],
+//   ["correct", 2],
+//   [true, "correct"],
+//   [false, "false ans"],
+// ]);
+// console.log(test);
 
-console.log(Object.entries(test));
-const hoursMap = new Map(Object.entries(openingHours));
-console.log(hoursMap);
+// console.log(Object.entries(test));
+// const hoursMap = new Map(Object.entries(openingHours));
+// console.log(hoursMap);
 
-console.log(test.get("question"));
-for (const [key, value] of test) {
-  if (typeof key === "number") console.log(`${key}:${value}`);
-}
-const answer = 3; //Number(prompt("ur ans?"));
-console.log(answer);
-console.log(test.get(test.get("correct") === answer));
+// console.log(test.get("question"));
+// for (const [key, value] of test) {
+//   if (typeof key === "number") console.log(`${key}:${value}`);
+// }
+// const answer = 3; //Number(prompt("ur ans?"));
+// console.log(answer);
+// console.log(test.get(test.get("correct") === answer));
 
-const gameEvents = new Map([
-  [17, "⚽️ GOAL"],
-  [36, "🔁 Substitution"],
-  [47, "⚽️ GOAL"],
-  [61, "🔁 Substitution"],
-  [64, "🔶 Yellow card"],
-  [69, "🔴 Red card"],
-  [70, "🔁 Substitution"],
-  [72, "🔁 Substitution"],
-  [76, "⚽️ GOAL"],
-  [80, "⚽️ GOAL"],
-  [92, "🔶 Yellow card"],
-]);
+// const gameEvents = new Map([
+//   [17, "⚽️ GOAL"],
+//   [36, "🔁 Substitution"],
+//   [47, "⚽️ GOAL"],
+//   [61, "🔁 Substitution"],
+//   [64, "🔶 Yellow card"],
+//   [69, "🔴 Red card"],
+//   [70, "🔁 Substitution"],
+//   [72, "🔁 Substitution"],
+//   [76, "⚽️ GOAL"],
+//   [80, "⚽️ GOAL"],
+//   [92, "🔶 Yellow card"],
+// ]);
 
-const events = [...new Set(gameEvents.values())];
-gameEvents.delete(64);
-console.log(events);
+// const events = [...new Set(gameEvents.values())];
+// gameEvents.delete(64);
+// console.log(events);
 
-console.log(`an event happnd on avg ${90 / gameEvents.size} minutes`);
+// console.log(`an event happnd on avg ${90 / gameEvents.size} minutes`);
 
-for (const [min, event] of gameEvents) {
-  const half = min <= 45 ? "first" : "second";
-  console.log(`[${half} half] ${min}:${event}`);
-}
+// for (const [min, event] of gameEvents) {
+//   const half = min <= 45 ? "first" : "second";
+//   console.log(`[${half} half] ${min}:${event}`);
+// }
+
+///////////////////////////////////////////
+// DAY _ 18 #fff
+
+const name = "Dheeraj name";
+console.log(name.slice(2));
+console.log(name.indexOf("j"));
+console.log(name.slice(0, name.indexOf(" ")));
+
+const checkHighGrades = function (mark) {
+  const g = mark.slice(-1);
+  if (g === "A" || g === "B") console.log("you got good marks");
+  else console.log("oops u got less marks");
+};
+checkHighGrades("92A");
+checkHighGrades("36C");
+checkHighGrades("61B");
+
+console.log(name.toLowerCase());
+const studentName = "dwadw"; // prompt("enter student name:");
+
+const correctingName = function (studentName) {
+  const studentNameLower = studentName.toLowerCase();
+  const studentNameCorrectName =
+    studentNameLower[0].toUpperCase() + studentNameLower.slice(1);
+  console.log(studentNameCorrectName);
+  const trimmedName = studentNameCorrectName.trim();
+};
+correctingName(studentName);
+
+// replacing
+
+const totMark = "290,97A";
+const percentMark = totMark.replaceAll("A", "%");
+console.log(percentMark);
+
+// SPLIT  method
+
+const [firstName, lastName] = "dheeraj kumar".split(" ");
+console.log(lastName);
+
+const joi = ["hey", firstName, lastName.toLocaleLowerCase()].join("-");
+console.log(joi);
+
+// padding
+
+console.log("dhee".padStart(10, "+"));
+console.log("dhee".padEnd(10, "+"));
+
+const creditCard = function (numb) {
+  const stra = numb + "";
+
+  const last = stra.slice(-4);
+  console.log(last.padStart(stra.length, "*"));
+};
+creditCard(23873963987);
+creditCard("8638998e79390");
+
+// const challenge = prompt("enter the string :");
+const check = function (challenge) {
+  const inp = String(challenge);
+
+  const place = inp.indexOf("_");
+  const upper = indexOf(inp[place + 1].toUpperCase());
+  const correct = inp.replace(`${place},${upper}`);
+  console.log(correct);
+};
+console.log(check("last_name"));

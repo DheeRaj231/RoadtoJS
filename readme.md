@@ -389,8 +389,10 @@
     - .delete
 
 - MAPS
+
   - map the values in key value,key has multiple type
   - iteration possible
+
     - .get
     - .set
     - .size
@@ -398,3 +400,27 @@
     - .has
     - .add
     - .delete
+
+# Day 18
+
+## Strings
+
+- .length
+- .indexOf()
+- .lastIndexOf()
+- .slice()
+- .toLowerCase()
+- .toUpperCase()
+- .trim()
+- .replace()
+- .replaceAll() // ES20
+- regular expression
+- replace(/word/, 'newWord')
+- .startsWith()
+- .endsWith()
+- .includes()
+- .split()
+- .join()
+- .padStart()
+- .padEnd()
+- .repeat()
