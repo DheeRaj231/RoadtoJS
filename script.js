@@ -1,4 +1,7 @@
+"use strict";
+
 /*
+
 //    DAY ! #fff
 
 // DATA TYPES
@@ -1235,67 +1238,291 @@ console.log('After marriage: ', jessicaCopy);
 ///////////////////////////////////////////
 // DAY _ 18 #fff
 
-const name = "Dheeraj name";
-console.log(name.slice(2));
-console.log(name.indexOf("j"));
-console.log(name.slice(0, name.indexOf(" ")));
+// const name = "Dheeraj name";
+// console.log(name.slice(2));
+// console.log(name.indexOf("j"));
+// console.log(name.slice(0, name.indexOf(" ")));
 
-const checkHighGrades = function (mark) {
-  const g = mark.slice(-1);
-  if (g === "A" || g === "B") console.log("you got good marks");
-  else console.log("oops u got less marks");
+// const checkHighGrades = function (mark) {
+//   const g = mark.slice(-1);
+//   if (g === "A" || g === "B") console.log("you got good marks");
+//   else console.log("oops u got less marks");
+// };
+// checkHighGrades("92A");
+// checkHighGrades("36C");
+// checkHighGrades("61B");
+
+// console.log(name.toLowerCase());
+// const studentName = "dwadw"; // prompt("enter student name:");
+
+// const correctingName = function (studentName) {
+//   const studentNameLower = studentName.toLowerCase();
+//   const studentNameCorrectName =
+//     studentNameLower[0].toUpperCase() + studentNameLower.slice(1);
+//   console.log(studentNameCorrectName);
+//   const trimmedName = studentNameCorrectName.trim();
+// };
+// correctingName(studentName);
+
+// // replacing
+
+// const totMark = "290,97A";
+// const percentMark = totMark.replaceAll("A", "%");
+// console.log(percentMark);
+
+// // SPLIT  method
+
+// const [firstName, lastName] = "dheeraj kumar".split(" ");
+// console.log(lastName);
+
+// const joi = ["hey", firstName, lastName.toLocaleLowerCase()].join("-");
+// console.log(joi);
+
+// // padding
+
+// console.log("dhee".padStart(10, "+"));
+// console.log("dhee".padEnd(10, "+"));
+
+// const creditCard = function (numb) {
+//   const stra = numb + "";
+
+//   const last = stra.slice(-4);
+//   console.log(last.padStart(stra.length, "*"));
+// };
+// creditCard(23873963987);
+// creditCard("8638998e79390");
+
+// // const challenge = prompt("enter the string :");
+// const check = function (challenge) {
+//   const inp = String(challenge);
+
+//   const place = inp.indexOf("_");
+//   const upper = indexOf(inp[place + 1].toUpperCase());
+//   const correct = inp.replace(`${place},${upper}`);
+//   console.log(correct);
+// };
+// console.log(check("last_name"));
+////////////////////////
+
+// DAY -19 #fff
+//
+// functions==========================
+// const pArray = [];
+
+// const protfolio = function (fullName, marks = "100", age = "21") {
+//   //default parameter
+//   const obj = {
+//     fullName,
+//     marks,
+//     age,
+//   };
+//   console.log(pArray);
+//   pArray.push(obj);
+// };
+
+// protfolio("adad");
+
+// const flight = "LH123";
+// const dhee = {
+//   name: "dheeraj kumar",
+//   passport: 32332232,
+// };
+
+// const checkIn = function (flightNum, passenger) {
+//   flightNum = "LH038";
+//   passenger.name = "Mr " + passenger.name;
+
+//   if (passenger.passport === 32332232) {
+//     console.log("check in");
+//   } else {
+//     console.log("bye");
+//   }
+// };
+
+// checkIn(flight, dhee);
+// console.log(flight);
+// console.log(dhee);
+
+// // is same as doing ...
+// const flightNum = flight;
+// const passenger = dhee;
+
+// const newPassword = function (person) {
+//   person.passport = Math.trunc(Math.random() * 100000);
+// };
+// newPassword(dhee);
+// checkIn(flight, dhee);
+
+//////////////////////////////
+// -----------FUNCTIONS
+
+// data abstraction
+// const oneWord = function (str1) {
+//   return str1.replace(/ /g, "").toLowerCase();
+// };
+
+// const upperFirstWord = function (str1) {
+//   const [first, ...other] = str1.split(" ");
+//   return [first.toUpperCase(), ...other].join(" ");
+// };
+
+// const merg = function (str, fn) {
+//   console.log(`originl string : ${str}`);
+//   console.log(`transformed string : ${fn(str)}`);
+//   console.log(`transforemed by ${fn.name}`);
+// };
+
+// merg("dheeraj is best", oneWord);
+// merg("dheeraj is best", upperFirstWord);
+
+// // js use callback all the time
+// const hi = function () {
+//   console.log("hsijods");
+// };
+
+// document.body.addEventListener("click", hi);
+
+// // functions returning functions
+// const greet = function (greeting) {
+//   return function (name) {
+//     console.log(`${greeting} ${name}`);
+//   };
+// };
+
+// const newGreet = greet("good evening");
+// newGreet("dheeraj");
+
+// greet("hey")("dheeraj");
+
+// const kingfisher = {
+//   airline: "kingfisher",
+//   fcode: "KF",
+//   bookings: [],
+//   book(flightNum, name) {
+//     console.log(
+//       `${name} booked a seat on ${this.airline} flight ${this.fcode}${flightNum}`
+//     );
+
+//     this.bookings.push({ flight: `${this.fcode}${flightNum}`, name });
+//   },
+// };
+
+// kingfisher.book(343, "dheeraj sharma");
+
+// const asiaAir = {
+//   airline: "asiaAir",
+//   fcode: "aa",
+//   bookings: [],
+// };
+
+// const book = kingfisher.book;
+
+// // manupulating this keyword using call method
+// // book.call(asiaAir, 33, "amsterda"); //this->asiaAir
+// // console.log(asiaAir);
+
+// // book.call(kingfisher, 11, "ajnj"); //this->asiaAir
+// // console.log(asiaAir);
+
+// // apply method similar to call but take array of arguements
+// const flightData = [587, "new person"];
+// book.apply(asiaAir, flightData); // book.call(asiaAir,...flightData)
+// console.log(asiaAir);
+
+// /////////////////////   bind
+
+// // book.call(asiaAir, 33, "amsterda");
+
+// const bookaA = book.bind(asiaAir); //this keyword is present in asiaAir
+// bookaA(22, "stev");
+
+// // bind with event listeners
+
+// kingfisher.planes = 300;
+// kingfisher.buyBlane = function (e) {
+//   e.preventDefault();
+//   console.log(this);
+//   this.planes++;
+//   console.log(this.planes);
+// };
+// asiaAir.buyBlane;
+// document
+//   .querySelector(".buy")
+//   .addEventListener("click", kingfisher.buyBlane.bind(kingfisher));
+
+//partil apps
+// const addTAX = (rate, value) => value + value * rate;
+// console.log(addTAX(0.3, 200));
+
+// const GST = addTAX.bind(null, 0.22);
+// console.log(GST(100));
+
+// challenge
+
+// const poll = {
+//   question: "what is ur fav prog lang? ",
+//   options: ["0:JAvascript", "1:Python", "2:Rust", "3:C++"],
+//   answers: new Array(4).fill(0),
+//   registerNewAAnswer: function () {
+//     const ip = Number(prompt(`${this.question} \n ${this.options}`));
+//     console.log(ip);
+
+//     typeof ip === "number" && ip < this.answers.length && this.answers[ip]++;
+//   },
+// };
+// document
+//   .querySelector("buy")
+//   .addEventListener("click", poll.registerNewAAnswer.bind(poll));
+
+///////////////////////////
+// DAY - 20
+
+//  IIFE
+
+// (function () {
+//   console.log("immediatly invoked fun exp");
+// })();
+
+// closures
+
+// let f;
+
+// const g = function () {
+//   const a = 18;
+//   f = function () {
+//     console.log(a * 3);
+//   };
+// };
+
+// const h = function () {
+//   const b = 888;
+//   f = function () {
+//     console.log(b * 5);
+//   };
+// };
+
+// g();
+
+// f();
+// // reassigning f fun
+// h();
+// f();
+// console.dir(f);
+
+const dheex = function (n, wait) {
+  const sattilite = n * 27;
+
+  setTimeout(function () {
+    console.log(`We are lunching ${n} satttilite`);
+    console.log(`there are ${sattilite} components`);
+  }, wait * 1000);
+  console.log(`The ROCKET is going to launch in 🔥 T-${wait} seconds 🚀🚀🚀`);
 };
-checkHighGrades("92A");
-checkHighGrades("36C");
-checkHighGrades("61B");
 
-console.log(name.toLowerCase());
-const studentName = "dwadw"; // prompt("enter student name:");
+dheex(3, 5);
 
-const correctingName = function (studentName) {
-  const studentNameLower = studentName.toLowerCase();
-  const studentNameCorrectName =
-    studentNameLower[0].toUpperCase() + studentNameLower.slice(1);
-  console.log(studentNameCorrectName);
-  const trimmedName = studentNameCorrectName.trim();
-};
-correctingName(studentName);
-
-// replacing
-
-const totMark = "290,97A";
-const percentMark = totMark.replaceAll("A", "%");
-console.log(percentMark);
-
-// SPLIT  method
-
-const [firstName, lastName] = "dheeraj kumar".split(" ");
-console.log(lastName);
-
-const joi = ["hey", firstName, lastName.toLocaleLowerCase()].join("-");
-console.log(joi);
-
-// padding
-
-console.log("dhee".padStart(10, "+"));
-console.log("dhee".padEnd(10, "+"));
-
-const creditCard = function (numb) {
-  const stra = numb + "";
-
-  const last = stra.slice(-4);
-  console.log(last.padStart(stra.length, "*"));
-};
-creditCard(23873963987);
-creditCard("8638998e79390");
-
-// const challenge = prompt("enter the string :");
-const check = function (challenge) {
-  const inp = String(challenge);
-
-  const place = inp.indexOf("_");
-  const upper = indexOf(inp[place + 1].toUpperCase());
-  const correct = inp.replace(`${place},${upper}`);
-  console.log(correct);
-};
-console.log(check("last_name"));
+(function () {
+  const header = document.querySelector("h1");
+  // header.style.color = "red";
+  console.log(header);
+})();
