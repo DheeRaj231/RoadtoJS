@@ -424,3 +424,42 @@
 - .padStart()
 - .padEnd()
 - .repeat()
+
+# Day 19
+
+- Default Parameters
+- ES5 usign ||
+- ES6 (fname = "newname" )
+- Key Points for default parameters
+  - Order Matters while passing data
+  - While passing arguments if you want to leave space then use undefined.
+- JavaScript does not have pass by reference
+- First class function and higher order function
+- Function calling other functions like eventListeners
+
+- Function accepting call back function
+- function returning function
+- call and apply method
+- Bind Method
+- Partial application
+- ### Call, Apply and Bind Method
+  | Call                                                                   | Apply                       | Bind                                    |
+  | ---------------------------------------------------------------------- | --------------------------- | --------------------------------------- |
+  | With call() we can make methods which can be used on different objects | Same as call                | It can borrow methods from other object |
+  | - It takes differnt parameters as value                                | - It takes Array as a value | - It creates new object                 |
+
+# Day 20
+
+- IIFE
+- Closures (Theory Lecture)
+- console.dir()
+- Simple Array methods
+  - slice()
+  - splice()
+  - reverse()
+  - concat()
+  - join()
+  - at()
+  - forEach()
+  - \_
+  - insertAdjecentHTML

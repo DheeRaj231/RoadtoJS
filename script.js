@@ -1475,7 +1475,7 @@ console.log('After marriage: ', jessicaCopy);
 //   .addEventListener("click", poll.registerNewAAnswer.bind(poll));
 
 ///////////////////////////
-// DAY - 20
+// DAY - 20 #fff
 
 //  IIFE
 
@@ -1509,20 +1509,20 @@ console.log('After marriage: ', jessicaCopy);
 // f();
 // console.dir(f);
 
-const dheex = function (n, wait) {
-  const sattilite = n * 27;
+// const dheex = function (n, wait) {
+//   const sattilite = n * 27;
 
-  setTimeout(function () {
-    console.log(`We are lunching ${n} satttilite`);
-    console.log(`there are ${sattilite} components`);
-  }, wait * 1000);
-  console.log(`The ROCKET is going to launch in 🔥 T-${wait} seconds 🚀🚀🚀`);
-};
+//   setTimeout(function () {
+//     console.log(`We are lunching ${n} satttilite`);
+//     console.log(`there are ${sattilite} components`);
+//   }, wait * 1000);
+//   console.log(`The ROCKET is going to launch in 🔥 T-${wait} seconds 🚀🚀🚀`);
+// };
 
-dheex(3, 5);
+// dheex(3, 5);
 
-(function () {
-  const header = document.querySelector("h1");
-  // header.style.color = "red";
-  console.log(header);
-})();
+// (function () {
+//   const header = document.querySelector("h1");
+//   // header.style.color = "red";
+//   console.log(header);
+// })();
