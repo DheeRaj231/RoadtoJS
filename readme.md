@@ -463,3 +463,11 @@
   - forEach()
   - \_
   - insertAdjecentHTML
+
+# DAY -21
+
+- maps
+- filter (condi)
+- reduse
+- find method
+- findindex

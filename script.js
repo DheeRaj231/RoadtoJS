@@ -1526,3 +1526,75 @@ console.log('After marriage: ', jessicaCopy);
 //   // header.style.color = "red";
 //   console.log(header);
 // })();
+
+////////////////////////////////////
+//  DAY- 21 #fff
+
+// maps
+
+// const dheeArray = [2, 3, -54, 32, -21, 4, 5];
+
+// const rupeeToUSD = 64.4;
+
+// const changeUSD = dheeArray.map(function (ch) {
+//   return ch * rupeeToUSD;
+// });
+
+// console.log(dheeArray);
+// console.log(changeUSD);
+
+// const user = "Dheeraj Khan Roy";
+
+// // filter (condition)
+
+// const deposits = dheeArray.filter(function (ch) {
+//   return ch > 0;
+// });
+// console.log(dheeArray);
+// console.log(deposits);
+
+// const withdrawl = [];
+// for (const ch of dheeArray) if (ch < 0) withdrawl.push(ch);
+// console.log(withdrawl);
+
+// // reduse
+
+// const bal = dheeArray.reduce(function (accumulator, cur, i, arr) {
+//   return accumulator + cur;
+// }, 0);
+// console.log(bal);
+
+// challenge map filter reduse
+
+// const dogSet1 = [5, 2, 4, 1, 15, 8, 3];
+// const dogSet2 = [16, 6, 10, 5, 6, 1, 4];
+
+// const dogHumanAge = dogSet1.map(function (ch) {
+//   const humanDAge = dogSet1 <= 2 ? 2 * ch : 16 + ch * 14;
+//   //   const humanDAge = 2 * ch;
+//   //   return humanDAge;
+//   // } else {
+//   //   const humanDAge = 16 + ch * 14;
+//   //   return humanDAge;
+//   // }
+// });
+// console.log(dogSet1);
+// const humanDAge = function (ages) {
+//   const dogHumanAge = ages.map((age) => (age <= 2 ? 2 * age : 16 + age * 4));
+//   console.log(dogHumanAge);
+//   const adult = dogHumanAge.filter((age) => age >= 18);
+//   const avg = adult.reduce((acc, age, i, arr) => acc + age / arr.length);
+// };
+// humanDAge(dogSet1);
+
+// find method  - used to find one ele of array
+
+// const accounts = {
+//   owener: "dheraj",
+// };
+
+// const account = accounts.find((acc) => acc.owener === "dheeraj");
+// console.log(account);
+
+// findindex
+// const index = dheeArray.findIndex((ch) => ch.dheeArray[1] === dheeArray[1]);
