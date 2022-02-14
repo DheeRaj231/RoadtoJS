@@ -471,3 +471,22 @@
 - reduse
 - find method
 - findindex
+
+# DAY -22
+
+- parseInt
+- isNaN
+- isFinite
+- sqrt()
+- max()
+- rounding numb
+
+  - trunk
+  - round
+  - ceil
+  - floor
+  - tofixed
+
+- remainder operator
+- numeric seprators
+- BigInt
