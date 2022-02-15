@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 /*
 
@@ -1654,3 +1654,31 @@ const account2 = {
   currency: "USD",
   locale: "en-US",
 };
+
+// DAY -22 #fff
+
+// dates
+
+const dob = new Date(2001, 01, 24, 15, 23);
+console.log(new Date(account1.movementsDates[0]));
+
+console.log(new Date(0));
+console.log(new Date(2 * 24 * 60 * 60 * 1000));
+console.log(dob.getTime());
+
+console.log(new Date(983008380000));
+
+// setTimeout()
+
+setTimeout(() => console.log("after 3 sec "), 3000);
+console.log("waiting");
+
+// setInterval
+
+setInterval(function () {
+  const n = new Date();
+  console.log(n);
+}, 1000);
+
+/////////////////////////////////////
+//  DAY - 23 #fff

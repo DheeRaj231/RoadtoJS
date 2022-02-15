@@ -490,3 +490,17 @@
 - remainder operator
 - numeric seprators
 - BigInt
+
+# DAY -23
+
+- Dates & Time
+  - getFullYear();
+  - getMonth
+  - getDate
+  - getDay
+  - toISOString
+  - setFullYear
+- Internationalizing Date
+- Internationalizing Number
+- setTimeout
+- setInterval
