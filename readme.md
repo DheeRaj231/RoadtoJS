@@ -538,3 +538,36 @@
 - current target
 - target
 - e.stopPropagation();
+
+===================================================
+
+# Day 27
+
+- Event delegation
+- DOM Traversing
+  - Going Downwards: Selecting Childrens
+    - querySelector
+    - childNodes
+    - children
+    - firstElementChild
+    - LastElementChild
+    - firstChild
+  - Going Upwards: Selecting Parents
+    - parentNode
+    - parentElement
+    - closest()
+  - Going Sideways: Selecting Siblings
+    - previousElementSiblings
+    - nextElementSiblings
+    - previousSibling
+    - nextSibling
+- Tabbed Component
+
+---
+
+# Day 28
+
+- Passing arguments to event handler
+- Sticky Navigation
+- Observer API
+- new IntersectionObserver()
