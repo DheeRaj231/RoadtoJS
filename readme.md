@@ -504,3 +504,37 @@
 - Internationalizing Number
 - setTimeout
 - setInterval.
+
+# Day 24
+
+- moment.js
+- Internationalization Dates
+- Internationalization Time
+- SetTimeOut
+- SetInterval
+- ClearInterval and ClearTimeOut
+
+---
+
+# Day 25
+
+- How the DOM works behind the scene
+- Dom is the interface between JavaScript and Browser(HTML)
+- Selecting, Creating and Deleting Element
+- Attributes, Data Attributes
+- Styling CSS
+
+---
+
+# Day 26
+
+- Events in javaScript
+- addEventListner
+- ele.onmouseEnter
+- \<h1 onlick = "hello">
+- Event Propogation : Bubbling and Capturing
+- whenever a event is activated it travels through all the parent element before reaching the eventNode
+- It does not pass thorough any sibling elements
+- current target
+- target
+- e.stopPropagation();
