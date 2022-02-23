@@ -570,4 +570,4 @@
 - Passing arguments to event handler
 - Sticky Navigation
 - Observer API
-- new IntersectionObserver()
+- new IntersectionObserver()..
