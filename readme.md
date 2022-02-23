@@ -503,4 +503,4 @@
 - Internationalizing Date
 - Internationalizing Number
 - setTimeout
-- setInterval
+- setInterval.
