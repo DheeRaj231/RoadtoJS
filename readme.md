@@ -646,7 +646,7 @@
 - Setters and getters
   - set and get
 - static methods and Instance method
-- object.create() - used for inheritance
+- object.create() - used for inheritance.s
 
 ---
 
