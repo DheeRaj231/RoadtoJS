@@ -646,7 +646,7 @@
 - Setters and getters
   - set and get
 - static methods and Instance method
-- object.create() - used for inheritance.s
+- object.create() - used for inheritance.
 
 ---
 
@@ -654,4 +654,4 @@
 
 - Inheritance between classes: Constructor function
 - Inheritance between classes: ES6 classes
-- Inheritance between classes: Object.create
+- Inheritance between classes: Object.create.

@@ -1354,7 +1354,7 @@ console.log('After marriage: ', jessicaCopy);
 // checkIn(flight, dhee);
 
 //////////////////////////////
-// -----------FUNCTIONS
+// ------------FUNCTIONS
 
 // data abstraction
 // const oneWord = function (str1) {
